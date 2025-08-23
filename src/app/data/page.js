@@ -466,7 +466,7 @@ export default function SolarDataDashboard() {
           <div style={headerTopStyle}>
             <div>
               <h1 style={titleStyle}>
-                🌞 Solar Data Monitoring
+                Solar Data Monitoring
               </h1>
               <p style={{ color: '#d1d5db', margin: '4px 0' }}>Real-time Aditya-L1 ASPEX & SUIT payload data</p>
               {lastUpdate && (
@@ -517,14 +517,7 @@ export default function SolarDataDashboard() {
                 </label>
               </div>
               
-              <button
-                onClick={fetchSolarData}
-                style={buttonStyle}
-                className="button"
-              >
-                <span>🔄</span>
-                <span>Refresh</span>
-              </button>
+              
             </div>
           </div>
         </div>
@@ -535,7 +528,6 @@ export default function SolarDataDashboard() {
             { label: 'Solar Wind Speed', value: currentStats.solarWindSpeed, unit: 'km/s', icon: '⚡', thresholds: [400, 500] },
             { label: 'Proton Density', value: currentStats.protonDensity, unit: '/cm³', icon: '🌐', thresholds: [10, 20] },
             { label: 'Plasma Temperature', value: currentStats.temperature, unit: 'K', icon: '🌡️', thresholds: [100000, 200000] },
-            { label: 'Magnetic Field', value: currentStats.magneticField, unit: 'nT', icon: '🧲', thresholds: [5, 10] }
           ].map((stat, idx) => {
             const statusStyle = getStatusStyle(stat.value, stat.thresholds);
             const statusText = getStatusText(stat.value, stat.thresholds);
