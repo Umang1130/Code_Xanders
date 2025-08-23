@@ -421,7 +421,7 @@ export default function CMEDetection() {
               transition: 'all 0.3s ease'
             }}
           >
-            📊 Export Data
+             Export Data
           </button>
 
           <button
@@ -521,8 +521,8 @@ export default function CMEDetection() {
         border: '1px solid rgb(62, 9, 154)'
       }}>
         {[
-          { id: "overview", label: "📊 Overview", icon: "📊" },
-          { id: "analytics", label: "📈 Analytics", icon: "📈" },
+          { id: "overview", label: "Overview", icon: "" },
+          { id: "analytics", label: " Analytics", icon: "" },
           { id: "events", label: "⚡ Events", icon: "⚡" },
           { id: "realtime", label: "🔴 Real-time", icon: "🔴" }
         ].map(tab => (
@@ -863,7 +863,7 @@ export default function CMEDetection() {
               color: 'white',
               marginBottom: '20px'
             }}>
-              🤖 Algorithm Performance
+               Algorithm Performance
             </h3>
             <div className="performance-metrics">
               <div className="performance-item" style={{ marginBottom: '16px' }}>
@@ -984,7 +984,7 @@ export default function CMEDetection() {
             backdropFilter: 'blur(10px)',
             gridColumn: 'span 2'
           }}>
-            <h3 style={{ color: 'white', marginBottom: '20px' }}>📊 Statistical Analysis</h3>
+            <h3 style={{ color: 'white', marginBottom: '20px' }}>Statistical Analysis</h3>
             <div style={{
               display: 'grid',
               gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
@@ -1054,7 +1054,7 @@ export default function CMEDetection() {
             padding: '24px',
             backdropFilter: 'blur(10px)'
           }}>
-            <h3 style={{ color: 'white', marginBottom: '20px' }}>📈 Trend Analysis</h3>
+            <h3 style={{ color: 'white', marginBottom: '20px' }}>Trend Analysis</h3>
             <div style={{ height: '300px' }}>
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart data={timeSeriesData.slice(-7)}>
@@ -1088,7 +1088,7 @@ export default function CMEDetection() {
               padding: '24px',
               backdropFilter: 'blur(10px)'
             }}>
-              <h3 style={{ color: 'white', marginBottom: '20px' }}>🎯 Prediction Confidence</h3>
+              <h3 style={{ color: 'white', marginBottom: '20px' }}>Prediction Confidence</h3>
               <div style={{ height: '300px' }}>
                 <ResponsiveContainer width="100%" height="100%">
                   <LineChart data={timeSeriesData}>
@@ -1136,7 +1136,7 @@ export default function CMEDetection() {
             alignItems: 'center'
           }}>
             <div>
-              <h3 style={{ color: 'white', marginBottom: '8px' }}>⚡ Recent CME Events</h3>
+              <h3 style={{ color: 'white', marginBottom: '8px' }}> Recent CME Events</h3>
               <p style={{ fontSize: '14px', color: '#aaa' }}>
                 Found {filteredEvents.length} events in the selected time range
               </p>
@@ -1155,7 +1155,7 @@ export default function CMEDetection() {
                   cursor: 'pointer'
                 }}
               >
-                {viewMode === 'grid' ? '📋 List View' : '📊 Grid View'}
+                {viewMode === 'grid' ? ' List View' : ' Grid View'}
               </button>
             </div>
           </div>
@@ -1226,7 +1226,7 @@ export default function CMEDetection() {
                         padding: '4px'
                       }}
                     >
-                      {favorites.includes(event.id) ? '⭐' : '☆'}
+                      {favorites.includes(event.id) ? '' : ''}
                     </button>
                     
                     <button
@@ -1303,7 +1303,7 @@ export default function CMEDetection() {
                       cursor: 'pointer'
                     }}
                   >
-                    📊 Analyze
+                     Analyze
                   </button>
                   
                   <button
@@ -1318,7 +1318,7 @@ export default function CMEDetection() {
                       cursor: 'pointer'
                     }}
                   >
-                    🔍 Details
+                     Details
                   </button>
                 </div>
               </div>
@@ -1513,7 +1513,7 @@ export default function CMEDetection() {
             backdropFilter: 'blur(10px)',
             gridColumn: 'span 2'
           }}>
-            <h3 style={{ color: 'white', marginBottom: '20px' }}>⚡ Quick Actions</h3>
+            <h3 style={{ color: 'white', marginBottom: '20px' }}> Quick Actions</h3>
             
             <div className="actions-grid" style={{
               display: 'grid',
@@ -1537,7 +1537,7 @@ export default function CMEDetection() {
                   fontWeight: '600'
                 }}
               >
-                🔄 Force Refresh
+                 Force Refresh
               </button>
               
               <button
@@ -1583,7 +1583,7 @@ export default function CMEDetection() {
                   fontWeight: '600'
                 }}
               >
-                📋 Generate Report
+                 Generate Report
               </button>
               
               <button
@@ -1609,7 +1609,7 @@ export default function CMEDetection() {
                   fontWeight: '600'
                 }}
               >
-                📊 Compare Events
+                 Compare Events
               </button>
             </div>
           </div>
